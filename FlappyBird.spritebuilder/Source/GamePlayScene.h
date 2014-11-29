@@ -18,6 +18,10 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
 @interface GamePlayScene : CCNode <CCPhysicsCollisionDelegate>
 {
     // define variables here;
+    // these variables are in the class scope
+    // they can be accessed anywhere in the GamePlayScene class
+    Character* character;
+    CCPhysicsNode *physicsNode; // a node that simulates physics
 }
 
 -(void) initialize;
