@@ -11,6 +11,7 @@
     // and appearance of in-game objects like our Flappy Bird
     character = (Character *)[CCBReader load:@"Character"];
     [physicsNode addChild:character];
+    [self addObstacle];
 }
 
 -(void)update:(CCTime)delta
