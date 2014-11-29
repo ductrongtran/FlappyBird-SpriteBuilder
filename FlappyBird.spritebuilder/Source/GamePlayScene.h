@@ -22,6 +22,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     // they can be accessed anywhere in the GamePlayScene class
     Character* character;
     CCPhysicsNode *physicsNode; // a node that simulates physics
+    float timeSinceObstacle;
 }
 
 -(void) initialize;
